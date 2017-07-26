@@ -2,8 +2,14 @@
 from pyaqtk.native.aqtk2 import synthe_utf8, free_wave
 from ctypes import *
 import wave
+import sys
 
-koe = "ハローワールド".encode('utf-8')
+argc = len(sys.argv)
+if argc > 1:
+    koe = sys.argv[1].encode('utf-8')
+else:
+    koe = "ハローワールド".encode('utf-8')
+
 i_speed = 100
 size = c_int(0)
 phont_data = 0
