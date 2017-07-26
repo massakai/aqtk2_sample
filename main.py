@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 from pyaqtk.native.aqtk2 import synthe_utf8, free_wave
 from ctypes import *
